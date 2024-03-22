@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    background: rgb(50,50,50);
+    background: linear-gradient(200deg, rgba(50,50,50,1) 36%, rgba(98,95,95,1) 58%, rgba(21,21,21,1) 93%);
+    font-family: 'Gotham' black;
+    margin: 0;
+    padding: 0;
+}
+.Logo {
+    font-size: 25px;
+    margin-left: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+}
+.navbar {
+    background: none;
+    width: 30%;
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.navbar button{
+    background-color: transparent;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar button:hover {
+    transform: scale(105%);
+    background-color: white;
+    color: black;
+    transition: 0,5s;
+}
+h1 {
+    background-color:rgb(80, 78, 78);
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h2 {
+    margin-bottom: 8px;
+    background-color: rgba(67, 64, 64, 0.959);
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+form {
+    background-color: rgb(54, 53, 53);
+    width: 50%;
+    border-radius: 10px;
+    margin:auto;
+    padding: 20px;
+}
+div {
+    background-color: rgb(80, 78, 78);
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+button[type="submit"] {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    height: 45px;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #b61514, #891a19, #d95911, #ca713f, #b32715, #ef6958);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 31s ease infinite;
+    -moz-animation: AnimationName 31s ease infinite;
+    animation: AnimationName 31s ease infinite;
+}
+button:hover {
+    transform: scale(103%);
+    transition: 1s;
+}
+button:not(:hover){
+    transform: 100%;
+    transition: 1s;
+}
+textarea {
+    width: 80%;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+textarea::placeholder{
+    color: #fff;
+}
+#bincidents , #schools {
+    background-color: gray;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+.anon {
+    text-align: start;
+    padding: 10px;
+}
+.radio {
+    margin-right: 10px;
+    background-color: grey;
+    border-color: white;
+}
+select {
+    cursor: pointer;
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-webkit-keyframes Backgroundanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Backgroundanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Backgroundanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="Logo">UNDE</span>
+        <div class="navbar">
+            <button>Report</button>
+            <button>Stories</button>
+            <button>UndeBot</button>
+        </div>
+    </nav>
+    <h1>Report bulling</h1>
+    <form method="post" action="">
+        <div class="Incidents">
+            <h2>Bulling Incidents</h2>
+            <select name="Incidents" id="bincidents">
+                <option value="">Sigu</option>
+                <option value="">Sigu</option>
+            </select>
+        </div>
+        <div class="details">
+            <h2>Report details:</h2>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your text here . . ."></textarea>
+        </div>
+        <div class="Schoolbulling">
+            <h2>School Bulling</h2>
+            <select name="schoolbulling" id="schools" aria-placeholder="School Bulling">
+                <option value="Nis">school1</option>
+                <option value="Nis">Nis</option>
+            </select>
+        </div>
+          <div class="Schoolname">
+            <h2>School name:</h2>
+            <textarea name="" id="" cols="50" rows="10" placeholder="Enter your text here . . ."></textarea>
+          </div>
+          <div class="anon">
+              <input type="radio" name="radio" class="radio">
+              <span>Report anonimously</span>
+          </div>
+          <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
